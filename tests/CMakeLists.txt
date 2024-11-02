@@ -20,12 +20,15 @@ link_libraries(GTest::gtest_main)
 #gtest_discover_tests(test_some_library)            # Register the tests to gtest
 
 
-#need to dix this error: 
+
 add_executable(sess17_test sess17_test.cpp) 
-gtest_discover_tests(sess17_test)      
+target_link_libraries(sess17_test PRIVATE sess17_lib)
+gtest_discover_tests(sess17_test)     
 
 add_executable(arabic_test arabic_test.cpp)
+target_link_libraries(arabic_test PRIVATE arabic_lib)
 gtest_discover_tests(arabic_test) 
 
 add_executable(arabic2_test arabic2_test.cpp)
+target_link_libraries(arabic2_test PRIVATE arabic2_lib)
 gtest_discover_tests(arabic2_test) 
