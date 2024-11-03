@@ -1,7 +1,7 @@
 #include "../include/sess17.h"
 
 int main() {
-    std::string fileName = "sess17.txt"; // Replace with actual file name
+    std::string fileName = "sess17.txt"; 
     std::vector<char> content = alexa::readBook(fileName);
     std::map<std::string, int> wordFreq = alexa::computeWordFrequency(content);
     int uniqueWordCount = alexa::countUniqueWords(content);
