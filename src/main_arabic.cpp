@@ -3,7 +3,7 @@
 int main() {
     alexa_arabic::setupLocale();
 
-    std::string fileName = "arabic.txt"; // UTF-8 encoded Arabic file
+    std::string fileName = "arabic.txt"; 
     std::vector<wchar_t> content = alexa_arabic::readBook(fileName);
     std::map<std::wstring, int> wordFreq = alexa_arabic::computeWordFrequency(content);
     int uniqueWordCount = alexa_arabic::countUniqueWords(content);
