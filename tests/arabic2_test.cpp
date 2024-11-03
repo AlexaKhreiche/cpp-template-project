@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "arabic2.h"  // Include the header file for the functions to be tested
+#include "arabic2.h" 
 
 namespace arabic2 {
 

@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "arabic.h"  // Ensure this includes your header file with function declarations
+#include "arabic.h"  
 
 namespace alexa_arabic {
 
